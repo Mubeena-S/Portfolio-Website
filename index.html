@@ -8,54 +8,105 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Mubeena Savalagi</h1>
-            <p>Aspiring Software Engineer | Electronics and Communication Graduate</p>
+        <!-- Photo and Designation -->
+    <div class="header-content">
+        <img src="profile photo.jpg" alt="none" style="height: 100px; width: 100px;">
+        <div class="designation">
         </div>
+    </div>
+            <nav style="margin-top: 40px;">
+                <a href="#about" style="margin-left: 50px;">About</a>
+                <a href="#skills" style="margin-left: 50px;">Skills</a>
+                <a href="#projects" style="margin-left: 50px;">Projects</a>
+                <a href="#experience" style="margin-left: 50px;">Experience</a>
+                <a href="#education" style="margin-left: 50px;">Education</a>
+                <a href="#contact" style="margin-left: 50px;">Contact</a>
+            </nav>
     </header>
 
-    <main>
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Mubeena, a passionate software developer with skills in modern web technologies like HTML, CSS, JavaScript, and backend databases like MongoDB and MySQL. I enjoy building creative and efficient solutions.</p>
-        </section>
+    <section id="about">
+        <h1 style="margin-top: 100px;">About Me</h1>
+        <p>Hello, I'm Mubeena Savalagi, a passionate Software Developer with expertise in web development technologies. I am constantly learning and improving my skills to stay updated with the latest trends in technology.</p>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Core Java</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A responsive portfolio website showcasing my skills, projects, and experience.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: E-commerce Website</h3>
+            <p>An e-commerce website with a shopping cart and payment gateway integration using JavaScript and MySQL.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h1>Experience</h1>
+        <div class="experience-item">
+            <h3>Java Full Stack Intern</h3>
+            <p><strong>Company:</strong> Global Quest Technologies</p>
+            <p><strong>Duration:</strong> [July 2024 - December 2024]</p>
             <ul>
-                <li>HTML, CSS, Bootstrap</li>
-                <li>JavaScript</li>
-                <li>MongoDB, MySQL</li>
-                <li>Core Java</li>
-                <li>Advanced JAVA</li>
+                <li>Developed and maintained web applications using Java, Spring Boot, and Hibernate.</li>
+                <li>Designed and implemented responsive front-end interfaces with HTML, CSS, Bootstrap, and JavaScript.</li>
+                <li>Integrated RESTful APIs for seamless communication between the front-end and back-end systems.</li>
+                <li>Collaborated with the team to troubleshoot and debug complex issues, ensuring optimal performance.</li>
+                <li>Worked with databases like MySQL and MongoDB to manage and query large datasets efficiently.</li>
+                <li>Contributed to Agile development practices, participating in daily stand-ups and sprint reviews.</li>
             </ul>
-        </section>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h1>Education</h1>
+        <div class="education-item">
+            <h3>Bachelor of Engineering in Electronics and Communication</h3>
+            <p><strong>Institution:</strong> S.G. Balekundri Institute of Technology</p>
+            <p><strong>University:</strong> Visvesvaraya Technological University (VTU)</p>
+            <p><strong>Year of Completion:</strong> 2024</p>
+            <h4>Key Heighlights :</h4>
+            <ul>
+                <li>Specialized in core subjects like Digital Electronics, Communication Systems, and Microprocessors.</li>
+                <li>Completed a final year project on "Voice Controlled Robot Using Arduino and Cam module"</li>
+                <li>Actively participated in technical fests, coding competitions, and workshops.</li>
+                <li>Achieved an overall score of 6.5 CGPA</li>
+            </ul>
+        </div>
+    </section>
+    
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>E-commerce Website</h3>
-                <p>Developed a responsive e-commerce website using HTML, CSS, JavaScript, and MongoDB for product management. Features include a product search system and dynamic shopping cart.</p>
-            </div>
-            <div class="project">
-                <h3>Online Job Portal</h3>
-                <p>Created an online job portal using HTML, CSS, Bootstrap, JavaScript, and MySQL. Features include user registration, job listings, and an application tracking system.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:savalagimubeena@gmail.com">savalagimubeena@gmail.com</a></p>
-            <p>Phone: <a href="tel:+916364115106">6364115106</a></p>
-        </section>
-    </main>
-
+    <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <form>
+            <input type="text" placeholder="Your Name" required style="margin-bottom: 2px;">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>© 2024 Mubeena Savalagi. All rights reserved.</p>
-    </footer>
+        <p>&copy; 2024 Mubeena Savalagi. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://github.com">GitHub</a>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
 </body>
 </html>
