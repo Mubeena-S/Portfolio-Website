@@ -87,15 +87,73 @@ ul li {
 .project p {
     margin: 5px 0 0;
 }
-
-footer {
+#documents {
+    padding: 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 5px 10px; /* Reduced padding */
-    background-color: #333;
-    color: white;
-    position: relative; /* Ensures it doesn't overlap */
 }
 
+#documents h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.documents-list li {
+    margin: 10px 0;
+}
+
+.documents-list a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.1rem;
+}
+
+.documents-list a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.pdf-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Prevents wrapping to the next row */
+    gap: 20px; /* Adds spacing between the boxes */
+    padding: 20px;
+    text-align: center;
+}
+.pdf-box {
+    width: 18%; /* Adjust the width of each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.pdf-box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+.pdf-box .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.pdf-box .download-btn i {
+    margin-right: 5px;
+}
+.pdf-box p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
 .contact-section {
     margin-bottom: 50px; /* Add extra space before footer */
 }
@@ -106,4 +164,11 @@ form textarea {
     height: 100px; /* Set a specific height for textarea */
     padding: 10px;
     resize: vertical; /* Allow user to resize vertically */
+}
+footer {
+    text-align: center;
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #333;
+    color: white;
+    position: relative; /* Ensures it doesn't overlap */
 }
