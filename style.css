@@ -200,7 +200,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .navbar ul {
         display: none;
         flex-direction: column;
