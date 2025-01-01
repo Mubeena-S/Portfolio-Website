@@ -82,7 +82,6 @@ section {
     border-radius: 10px;
 }
 .experience-item{
-    padding-right: 500px;
     text-align: justify;
     background-color: azure;
     border: 1px solid black;
@@ -132,6 +131,39 @@ section {
 .box .download-link:hover {
     background-color: #0056b3;
 }
+    .pdf-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .pdf-item {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 150px;
+    }
+    .pdf-item h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .pdf-item a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .pdf-item a:hover {
+      background-color: #0056b3;
+    }
 /* Contact Form */
 form {
     max-width: 500px;
