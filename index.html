@@ -7,60 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!---Header Section-->
+    <!-- Header Section -->
     <header>
-        <!-- Photo and Designation -->
-    <div class="header-content">
-        <img src="profile photo.jpg" alt="none" style="height: 50px; width: 50px; border-radius: 50%; margin-left: 50px;" >
-        <div class="designation">
-            <p style="margin-top: 2px; font-size: small;">Mubeena Savalagi - Software Engineer</p>
+        <div class="header-content">
+            <img src="profile photo.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Mubeena Savalagi</h1>
+            <p>Software Engineer</p>
         </div>
-    </div>
-    <!--NavBar Section-->
-            <nav style="margin-top: 40px;">
-                <a href="#about" style="margin-left: 50px;">About</a>
-                <a href="#skills" style="margin-left: 50px;">Skills</a>
-                <a href="#projects" style="margin-left: 50px;">Projects</a>
-                <a href="#experience" style="margin-left: 50px;">Experience</a>
-                <a href="#education" style="margin-left: 50px;">Education</a>
-                <a href="#My Academic Documents" style="margin-left: 50px;">My Academic Documents</a>
-                <a href="#Resume" style="margin-left: 50px;">Resume</a>
-                <a href="#Cover Letter" style="margin-left: 50px;">Cover Letter</a>
-                <a href="#contact" style="margin-left: 50px;">Contact</a>
-            </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
     </header>
-<!--About-->
+
+    <!-- About Section -->
     <section id="about">
-        <h1 style="margin-top: 100px;">About Me</h1>
-        <p>Hello, I'm Mubeena Savalagi, a passionate Software Developer with expertise in web development technologies. I am constantly learning and improving my skills to stay updated with the latest trends in technology.</p>
+        <h1>About Me</h1>
+        <div class="about-me">
+            <p>Hello, I'm Mubeena Savalagi, a passionate Software Developer with expertise in web development technologies. I am constantly learning and improving my skills to stay updated with the latest trends in technology.</p>
+        </div>
     </section>
-<!--Skills-->
+
+    <!-- Skills Section -->
     <section id="skills">
         <h1>Skills</h1>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Core Java</li>
-        </ul>
+            <div class="skills">
+
+                 <ul>
+                       <li>HTML</li>
+                       <li>CSS</li>
+                       <li>JavaScript</li>
+                       <li>MongoDB</li>
+                       <li>MySQL</li>
+                       <li>Core Java</li>
+                 </ul>
+            </div>
     </section>
-<!--Projects-->
+
+    <!-- Projects Section -->
     <section id="projects">
         <h1>Projects</h1>
         <div class="project">
-            <h3>Project 1: Portfolio Website</h3>
+            <h3>Portfolio Website</h3>
             <p>A responsive portfolio website showcasing my skills, projects, and experience.</p>
-            <a href="#">View Project</a>
         </div>
         <div class="project">
-            <h3>Project 2: E-commerce Website</h3>
+            <h3>E-commerce Website</h3>
             <p>An e-commerce website with a shopping cart and payment gateway integration using JavaScript and MySQL.</p>
-            <a href="#">View Project</a>
         </div>
     </section>
-<!--Experience-->
+    <!--Experience-->
     <section id="experience">
         <h1>Experience</h1>
         <div class="experience-item">
@@ -77,7 +81,7 @@
             </ul>
         </div>
     </section>
-  <!--Education-->  
+    <!--Education-->  
     <section id="education">
         <h1>Education</h1>
         <div class="education-item">
@@ -93,90 +97,44 @@
                 <li>Achieved an overall score of 6.5 CGPA</li>
             </ul>
         </div>
-    </section>
-   <!--My Academic Documents--> 
-   <h1 style="text-align: center;">My Academic Documents</h1>
-   <section class="pdf-container">
-    <!-- PDF 1 -->
-    <div class="pdf-container">
-        <iframe src="pdfs/10th_marks_card.pdf" frameborder="0"></iframe>
-        <p>10th Marks Card</p>
-        <a href="pdfs/10th_marks_card.pdf" download>Click Here to Download</a>
-    </div>
-    <!-- PDF 2 -->
-    <div class="pdf-box">
-        <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Diploma Mark's card's.pdf"></iframe>
-        <p>Diploma Marks Cards</p>
-        <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Diploma Mark's card's.pdf" download class="download-btn">
-            <i>⬇️</i> Click here to download
-        </a>
-    </div>
-
-    <!-- PDF 3 -->
-    <div class="pdf-box">
-        <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\B.E Marks Cards.pdf"></iframe>
-        <p>B.E. Marks Cards</p>
-        <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\B.E Marks Cards.pdf" download class="download-btn">
-            <i>⬇️</i> Click here to download
-        </a>
-    </div>
-
-    <!-- PDF 4 -->
-    <div class="pdf-box">
-        <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\B.E Certificate.pdf"></iframe>
-        <p>B.E. Certificate</p>
-        <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\B.E Certificate.pdf" download class="download-btn">
-            <i>⬇️</i> Click here to download
-        </a>
-    </div>
-
-    <!-- PDF 5 -->
-    <div class="pdf-box">
-        <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Diploma original certificate.pdf"></iframe>
-        <p>Diploma Certificate</p>
-        <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Diploma original certificate.pdf" download class="download-btn">
-            <i>⬇️</i> Click here to download
-        </a>
-    </div>
-</section>
-<!--------------------------- Resume & Cover Letter-------------------------------------------------->
-<h1 style="text-align: center;" style="text-align: start;">Resume and Cover Letter</h1>
-
-    <div class="pdf-container">
-        <!-- Resume PDF -->
-        <div class="pdf-item">
-            <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Resume.lnk" class="pdf-frame"></iframe>
-            <div class="pdf-name">Resume</div>
-            <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Resume.lnk" download class="download-link">Download Resume</a>
+    <!--Documents-->
+    <section class="container">
+        <!-- Resume Section -->
+        <div class="box">
+            <h2>Resume</h2>
+            <embed src="Resume.lnk" type="application/pdf">
+            <a href="Resume.lnk" download="Resume_Mubeena" class="download-link">Download Resume</a>
         </div>
-
-        <!-- Cover Letter PDF -->
-        <div class="pdf-item">
-            <iframe src="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Cover letter.pdf" class="pdf-frame" style="margin-left: 40px;"></iframe>
-            <div class="pdf-name">Cover Letter</div>
-            <a href="D:\GQT\HTML\HTML\web2\web1\dress\gift center\abdul kalam\delhi univercity\personal portfolio\Cover letter.pdf" download class="download-link">Download Cover Letter</a>
+        <!-- Cover Letter Section -->
+        <div class="box">
+            <h2>Cover Letter</h2>
+            <embed src="Cover letter.pdf" type="application/pdf">
+            <a href="Cover letter.pdf" download="Cover_Letter_Mubeena" class="download-link">Download Cover Letter</a>
         </div>
-    </div>
-</body>
-</html>
-<!-- Contact Section-->
-    <section id="contact" class="contact-section">
-        <h1>Contact Me</h1>
-        <form>
-            <input type="text" placeholder="Your Name" required style="margin-bottom: 2px;">
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
     </section>
-   <!--Footer Section--> 
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-me">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form> 
+        </div>
+        <div class="message" id="message"></div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mubeena Savalagi. All Rights Reserved.</p>
         <div class="social-media">
             <a href="https://linkedin.com">LinkedIn</a>
             <a href="https://github.com">GitHub</a>
         </div>
-    </footer>    
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
