@@ -8,15 +8,39 @@ body {
     border: 1px solid #ddd;
     background-color: aqua;
 }
+/* Header 1 */
+.first-header {
+    background-color: lightblue; /* Light sky blue background */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding */
+    color: antiquewhite;
+}
 
+.first-header h1 {
+    font-size: 100px; /* Increase font size */
+    color:white; /* Optional: Change text color */
+    margin: 0; /* Remove default margin */
+    font-style: italic;
+    text-shadow: 8px 8px 15px lightgoldenrodyellow; /* White text shadow */
+    width: 200px;
+
+}
 /* Header */
 header {
-    background: rgb(100, 168, 100);
+    background: lightpink;
     color: white;
     padding: 20px;
     text-align: center;
+    margin-top: 10px;
+}
+.header-content h2 {
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.header-content h2:hover {
+    color: #007bff; ; /* Change to your preferred hover color */
+    transform: scale(1.1); /* Slightly enlarges the text */
+}
 .header-content img {
     width: 80px;
     height: 80px;
@@ -30,6 +54,8 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    list-style: none;
+    gap: 20px; 
 }
 
 .navbar li {
@@ -50,6 +76,39 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Navbar background color */
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* Default link color */
+    font-size: 16px;
+    transition: color 0.3s ease, font-size 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+    color: #007bff; /* Hover text color */
+    text-decoration: underline; /* Adds underline on hover */
+    font-size: 18px; /* Slightly increases font size */
+}
 
 /* Section Styles */
 section {
@@ -66,12 +125,32 @@ section {
     border: 1px solid black;
     border-radius: 10px;
 }
+#about h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#about h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812; /* Optional: Change color on hover */
+}
 .skills {
     padding-right: 1100px;
     text-align: justify;
     background-color: azure;
     border: 1px solid black;
     border-radius: 10px;
+}
+#skills h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#skills h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812;; /* Optional: Change color on hover */
 }
 .project {
     margin: 10px 0;
@@ -81,17 +160,63 @@ section {
     border: 1px solid black;
     border-radius: 10px;
 }
+#projects h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#projects h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812;; /* Optional: Change color on hover */
+}
 .experience-item{
     text-align: justify;
     background-color: azure;
     border: 1px solid black;
     border-radius: 10px;
 }
+#experience h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#experience h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812;; /* Optional: Change color on hover */
+}
 .education-item{
     text-align: justify;
     background-color: azure;
     border: 1px solid black;
     border-radius: 10px;
+}
+#education h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#education h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812;; /* Optional: Change color on hover */
+}
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+#container h1 {
+    font-size: 24px; /* Default font size */
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color */
+}
+
+#container h1:hover {
+    font-size: 28px; /* Increased font size on hover */
+    color: #e67812;; /* Optional: Change color on hover */
 }
 .container {
     display: flex;
@@ -131,7 +256,8 @@ section {
 .box .download-link:hover {
     background-color: #0056b3;
 }
-    .pdf-container {
+/* Marks Cards */   
+.pdf-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -170,6 +296,16 @@ section {
         max-width: 600px;
         width: 100%;
         margin-left: 300px;
+    }
+    #parent h1 {
+        font-size: 24px; /* Default font size */
+        transition: font-size 0.3s ease, color 0.3s ease;
+        color: #333; /* Default color */
+    }
+    
+    #parent h1:hover {
+        font-size: 28px; /* Increased font size on hover */
+        color: #e67812;; /* Optional: Change color on hover */
     }
     .slides {
         display: none;
